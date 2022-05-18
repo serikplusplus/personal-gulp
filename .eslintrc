@@ -1,0 +1,21 @@
+{
+	"env": {
+		"browser": true,
+		"commonjs": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": ["airbnb/base", "prettier"],
+	"plugins": ["prettier"],
+	"rules": {
+		"semi": "off",
+		"no-plusplus": "off",
+		"no-tabs": "off",
+		"arrow-body-style": "warn",
+		"no-alert": "warn",
+		"prefer-destructuring": "warn",
+		"indent": [2, "tab"],
+		"no-param-reassign": "warn",
+		"linebreak-style": "off"
+	}
+}

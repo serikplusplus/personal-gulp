@@ -40,6 +40,8 @@ export const html = () => {
 			)
 			.pipe(htmlmin({ collapseWhitespace: true }))
 			.pipe(app.gulp.dest(app.path.build.html))
+			.pipe(app.plugins.if(app.isBuild, app.gulp.src(`${app.path.srcFolder}/robots.txt`, {})))
+			.pipe(app.plugins.if(app.isBuild, app.gulp.dest(app.path.build.html)))
 			.pipe(app.plugins.browsersync.stream())
 	)
 }

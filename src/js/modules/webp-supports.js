@@ -1,4 +1,4 @@
-export function isWebp(params) {
+export function isWebp() {
 	
 	function testWebp(callback) {
 		let webP = new Image()
